@@ -31,7 +31,7 @@ def find_max_commits():
 
 def max_days():
 	commit_file = open(sys.argv[1])
-	days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'] #For output formatting.
+	days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'] #For output formatting.
 	per_day = [0]*7 #Initialize the commits per day to 0, for each of the 7 days of the week.
 	stats = json.load(commit_file)
 	for stat in stats:
