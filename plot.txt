@@ -1,0 +1,11 @@
+#Run ' gnuplot plot.txt '
+#File ' points.png ' will appear in the same directory
+
+set term png
+set output "points.png"
+set title "Github Commits"
+set xlabel "<--- Days --->"
+set ylabel "<--- Commits --->"
+set grid
+plot [0:6] [0:20] 'points_data.txt' with points lt 2 pt 7
+quit
